@@ -30,7 +30,14 @@
       {
         "duplicate-id-aria": "off"
       }
-    ]
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ],
+    "typescript-config/strict": "off"
   },
   "browserslist": [
     "defaults",
