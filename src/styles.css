@@ -1,4 +1,4 @@
-/*
+/* 
  * ----------------------------
  * Common CSS
  * ----------------------------
@@ -123,18 +123,18 @@ a,a:hover{
 aside.menu-sidebar.d-none.d-lg-block.clr{
   background:0 0;
   z-index:99999999;
-  height:65px;
+  height:75px;
   box-shadow:-2px 0 4px #0000003b
 }
 
-/*
+/* 
 * ----------------------------
 * Header Desktop Section
 * ----------------------------
 */
 
 .header-desktop{
-  background:#8F6E5D;
+  background:#0da8e4;
   -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
   -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
   box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
@@ -250,11 +250,11 @@ input.au-input.au-input-xl{
 }
 
 .total{
-  background:#493429;
+  background:#205b8d;
   line-height:43px;
   color:#fff;
   border-radius:30px;
-  border:1px solid #8f6e5d05;
+  border:1px solid #0da8e4;
   float:left;
   margin-top:7px;
   padding-left:17px
@@ -283,15 +283,15 @@ input.au-input.au-input-xl{
   right:0;
   min-width:95px;
   color:#fff;
-  border:1px solid #332118;
+  border:1px solid #205b8d;
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
   border-radius:43px;
-  background: #332118;
+  background:#205b8d
 }
 
 .au-btn-submit:hover{
-  background:#8a5337
+  background:#05143f
 }
 
 .au-btn-submit>i{
@@ -307,7 +307,7 @@ input.au-input.au-input-xl{
   transform:translate(-50%,-50%)
 }
 
-/*
+/* 
 * ----------------------------
 * Left Menu Bar
 * ----------------------------
@@ -324,7 +324,7 @@ input.au-input.au-input-xl{
 }
 
 .menu-sidebar .logo{
-  background:#8F6E5D;
+  background:#fff;
   height:75px;
   padding:0 35px;
   display:-webkit-box;
@@ -368,7 +368,7 @@ input.au-input.au-input-xl{
 
 .navbar-sidebar .navbar-list li a{
   display:block;
-  color:#0f0f0f;
+  color:#555;
   font-size:16px;
   padding:5px 0
 }
@@ -378,10 +378,10 @@ input.au-input.au-input-xl{
 }
 
 .navbar-sidebar .navbar-list li a:hover{
-  color:#8F6E5D
+  color:#0da8e4
 }
 
-/*
+/* 
 * ----------------------------
 * Header Mobile Section
 * ----------------------------
@@ -517,7 +517,7 @@ input.au-input.au-input-xl{
   padding:10% 15%!important
 }
 
-/*
+/* 
 * ----------------------------
 * Products List
 * ----------------------------
@@ -559,7 +559,7 @@ input.au-input.au-input-xl{
   color:#585858
 }
 
-/*
+/* 
 * ----------------------------
 * Shopping Cart Checkout
 * ----------------------------
@@ -673,7 +673,7 @@ select{
   color:#828482
 }
 
-/*
+/* 
 * ----------------------------
 * Shopping Cart Details
 * ----------------------------
@@ -708,7 +708,7 @@ table.table.table-bordered th{
   margin-left:5px
 }
 
-/*
+/* 
 * ----------------------------
 * Product Details
 * ----------------------------
@@ -719,6 +719,7 @@ table.table.table-bordered th{
   font-weight:800;
   color:#0da8e4
 }
+
 .detail-section{
   margin-top:60px
 }
@@ -726,9 +727,10 @@ table.table.table-bordered th{
 .detail-img{
   width: 30%;
 }
+
 /**/
 
-/*
+/* 
 * ----------------------------
 * Buttons
 * ----------------------------
@@ -753,16 +755,12 @@ a.primary-btn:hover{
   background:#0da8e4;
   color:#fff
 }
-.justify-content-center {
-  display: flex !important;
-  justify-content: center !important;
-}
 
 .active-link {
 font-weight: bold;
 }
 
-/*
+/* 
 * ----------------------------
 * Footer section
 * ----------------------------
@@ -787,7 +785,7 @@ footer ul li{
   padding:10px 20px
 }
 
-/*
+/* 
 * ----------------------------
 * Media Queries
 * ----------------------------
@@ -829,7 +827,7 @@ footer ul li{
       font-size:22px;
       float:left;
       margin-top:16px;
-      color:#8F6E5D;
+      color:#205b8d;
       margin-left:15px
   }
   .header-mobile .header-mobile-bar{
@@ -924,7 +922,7 @@ footer ul li{
       font-size:22px;
       float:left;
       margin-top:16px;
-      color:#8F6E5D;
+      color:#205b8d;
       margin-left:15px
   }
       .header-wrap2{
@@ -975,7 +973,7 @@ footer ul li{
       font-size:22px;
       float:left;
       margin-top:16px;
-      color:#8F6E5D;
+      color:#205b8d;
       margin-left:15px
   }
   .footer-pagination{
@@ -984,15 +982,6 @@ footer ul li{
   .product-box{
       text-align:centerg
   }
-  .product-hover-container {
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.product-box:hover .product-hover-container {
-    transform: scale(1.05); /* Increase the scale for a zoom effect */
-}
   .page-container{
       position:relative;
       top:66px;
@@ -1023,7 +1012,7 @@ footer ul li{
       font-size:18px;
       float:left;
       margin-top:16px;
-      color:#8f6e5dc5;
+      color:#03a9f4;
       margin-left:15px
   }
   .total span{
@@ -1036,7 +1025,7 @@ footer ul li{
       margin-left:6px
   }
   .total{
-      background:#8F6E5D;
+      background:#205b8d;
       line-height:30px;
       color:#fff;
       border-radius:30px;

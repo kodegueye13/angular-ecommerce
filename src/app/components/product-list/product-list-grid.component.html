@@ -7,16 +7,18 @@
                 <div *ngFor="let tempProduct of products" class="col-md-3">
 
                     <div class="product-box">
+
                         <a routerLink="/products/{{ tempProduct.id }}">
-                            <div class="product-hover-container">
-                                <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
-                                <h1>{{ tempProduct.name }}</h1>
-                                <div class="price">{{ tempProduct.unitPrice | currency:'USD' }}</div>
-                                <button (click)="addToCart(tempProduct)" class="btn btn-outline-dark btn-sm">Add to cart</button>
-                            </div>
+                            <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
                         </a>
+
+                        <a routerLink="/products/{{ tempProduct.id }}">
+                            <h1>{{ tempProduct.name }}</h1>
+                        </a>
+                        
+                        <div class="price">{{ tempProduct.unitPrice | currency:'USD' }}</div>
+                        <button (click)="addToCart(tempProduct)" class="btn btn-primary btn-sm">Add to cart</button>
                     </div>
-                    
 
                 </div>
 
@@ -34,13 +36,13 @@
 
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-12 justify-content-center">
+                            <div class="col-md-9" style="padding-left: 30%">
                             
                                 <ngb-pagination [(page)]="thePageNumber"
                                                 [pageSize]="thePageSize"
                                                 [collectionSize]="theTotalElements"
                                                 [maxSize]="5"
-                                                [rotate]="true"
+                                                [boundaryLinks]="true"
                                                 (pageChange)="listProducts()">
 
                                 </ngb-pagination>
@@ -48,7 +50,8 @@
                             </div>
 
                             <div class="col-md-3 mt-2" style="text-align: right;">
-                                <span class="mr-2">Size </span>
+                                <span class="mr-2">Page Size</span>
+
 
                                 <select #myPageSelect (change)="updatePageSize(myPageSelect.value)">
                                     <option>2</option>
